@@ -33,7 +33,7 @@ It provides a single window with themed tabs, async process logging, and a prese
 | Tool | URL |
 |------|-----|
 | dovi_tool | https://github.com/quietvoid/dovi_tool/releases |
-| mp4muxer | https://github.com/quietvoid/mp4muxer/releases |
+| mp4muxer | https://github.com/DolbyLaboratories/dlb_mp4base/blob/master/bin/mp4muxer.exe |
 | MKVToolNix (mkvmerge, etc.) | https://mkvtoolnix.download/downloads.html |
 | FFmpeg | https://ffmpeg.org/download.html |
 
