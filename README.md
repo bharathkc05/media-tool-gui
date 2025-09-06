@@ -100,26 +100,30 @@ Install:
 pip install pyinstaller
 ```
 
-**One-folder build:**
+**One Folder Builder (PowerShell):**
 ```powershell
-pyinstaller .\media_tool.py --name MediaToolGUI --icon .\favicon.ico --noconsole ^
-	--add-data "apple-touch-icon.png;." ^
-	--add-data "favicon-16x16.png;." ^
-	--add-data "favicon-32x32.png;." ^
-	--add-data "android-chrome-192x192.png;." ^
-	--add-data "android-chrome-512x512.png;." ^
-	--add-data "favicon.ico;."
+pyinstaller --onedir --windowed --icon "favicon.ico" --name "MediaToolGUI" `
+  --add-data "android-chrome-192x192.png;." `
+  --add-data "android-chrome-512x512.png;." `
+  --add-data "apple-touch-icon.png;." `
+  --add-data "favicon-16x16.png;." `
+  --add-data "favicon-32x32.png;." `
+  --add-data "favicon.ico;." `
+  --add-data "site.webmanifest;." `
+  1.py
 ```
 
-**One-file build:**
+**One File Builder (PowerShell):**
 ```powershell
-pyinstaller .\media_tool.py --onefile --name MediaToolGUI --icon .\favicon.ico --noconsole ^
-	--add-data "apple-touch-icon.png;." ^
-	--add-data "favicon-16x16.png;." ^
-	--add-data "favicon-32x32.png;." ^
-	--add-data "android-chrome-192x192.png;." ^
-	--add-data "android-chrome-512x512.png;." ^
-	--add-data "favicon.ico;."
+pyinstaller --onefile --windowed --icon "favicon.ico" --name "MediaToolGUI" `
+  --add-data "android-chrome-192x192.png;." `
+  --add-data "android-chrome-512x512.png;." `
+  --add-data "apple-touch-icon.png;." `
+  --add-data "favicon-16x16.png;." `
+  --add-data "favicon-32x32.png;." `
+  --add-data "favicon.ico;." `
+  --add-data "site.webmanifest;." `
+  1.py
 ```
 
 Add `--version-file version_info.txt` if you create one.
