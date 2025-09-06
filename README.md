@@ -4,11 +4,6 @@
 
 ### *Streamlined Dolby Vision & Video Workflow Orchestrator*
 
-[
-[
-[
-[
-
 </div>
 
 ***
