@@ -1,7 +1,19 @@
-# Media Tool GUI
+# 🎬 Media Tool GUI ⚙️
+
+### *Streamlined Dolby Vision & Video Workflow Orchestrator*
+
+[
+[
+[
+[
+
+</div>
+
+***
+
+## 📖 Overview
 
 A Python (Tkinter) desktop GUI that wraps common media command-line utilities used in Dolby Vision and general video workflows:
-
 - **dovi_tool** (Dolby Vision metadata)
 - **mp4muxer**
 - **MKVToolNix suite**: `mkvmerge`, `mkvextract`, `mkvinfo`, `mkvpropedit`
@@ -9,46 +21,56 @@ A Python (Tkinter) desktop GUI that wraps common media command-line utilities us
 
 It provides a single window with themed tabs, async process logging, and a preset system.
 
----
-## Features
-- Unified GUI for multiple external tools
-- Asynchronous execution with live log + cancel
-- Light & Dark themes
-- Multi-size icon handling (.ico + PNG fallbacks)
-- Preset save/load (`tool_gui_presets.json`)
-- Auto-detects tool paths (PATH / current / subdirectories)
-- Collapsible advanced sections
-- Raw extra args fields for power users
+***
 
----
-## Files
+## ✨ Features
+
+- 🔧 Unified GUI for multiple external tools
+- ⚡ Asynchronous execution with live log + cancel
+- 🎨 Light & Dark themes
+- 🖼️ Multi-size icon handling (.ico + PNG fallbacks)
+- 💾 Preset save/load (`tool_gui_presets.json`)
+- 🔍 Auto-detects tool paths (PATH / current / subdirectories)
+- 📂 Collapsible advanced sections
+- 🔧 Raw extra args fields for power users
+
+***
+
+## 📁 Files
+
 | File | Purpose |
 |------|---------|
 | `media_tool.py` | Main Tkinter application |
 | `tool_gui_presets.json` | Created on demand to store presets |
 | `favicon.ico` / PNG icons | Window & executable icons |
 
----
-## External Tools (Not Bundled)
+***
+
+## 🛠️ External Tools (Not Bundled)
+
 | Tool | URL |
 |------|-----|
-| dovi_tool | https://github.com/quietvoid/dovi_tool/releases |
-| mp4muxer | https://github.com/DolbyLaboratories/dlb_mp4base/blob/master/bin/mp4muxer.exe |
+| dovi_tool | [https://github.com/quietvoid/dovi_tool/releases](https://github.com/quietvoid/dovi_tool/releases) |
+| mp4muxer | [https://github.com/DolbyLaboratories/dlb_mp4base/blob/master/bin/mp4muxer.exe](https://github.com/DolbyLaboratories/dlb_mp4base/blob/master/bin/mp4muxer.exe) |
 | MKVToolNix (mkvmerge, etc.) | https://mkvtoolnix.download/downloads.html |
-| FFmpeg | https://ffmpeg.org/download.html |
+| FFmpeg | [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html) |
 
 Startup dialog offers download links if missing.
 
----
-## Requirements
-- Python 3.9+
-- Tkinter (bundled with CPython)
-- Windows primary target; should work on Linux/macOS if tools installed
+***
+
+## 📋 Requirements
+
+- 🐍 Python 3.9+
+- 🖥️ Tkinter (bundled with CPython)
+- 🪟 Windows primary target; should work on Linux/macOS if tools installed
 
 No third-party Python deps (pure stdlib + Tk).
 
----
-## Run From Source
+***
+
+## 🚀 Run From Source
+
 ```powershell
 python media_tool.py
 ```
@@ -66,18 +88,22 @@ $env:DEBUG_ICONS='1'
 python media_tool.py
 ```
 
----
-## Presets
+***
+
+## 💾 Presets
+
 Saved in `tool_gui_presets.json`. Use File menu -> Save / Load presets.
 
----
-## Build (PyInstaller)
+***
+
+## 📦 Build (PyInstaller)
+
 Install:
 ```powershell
 pip install pyinstaller
 ```
 
-One-folder build:
+**One-folder build:**
 ```powershell
 pyinstaller .\media_tool.py --name MediaToolGUI --icon .\favicon.ico --noconsole ^
 	--add-data "apple-touch-icon.png;." ^
@@ -88,7 +114,7 @@ pyinstaller .\media_tool.py --name MediaToolGUI --icon .\favicon.ico --noconsole
 	--add-data "favicon.ico;."
 ```
 
-One-file build:
+**One-file build:**
 ```powershell
 pyinstaller .\media_tool.py --onefile --name MediaToolGUI --icon .\favicon.ico --noconsole ^
 	--add-data "apple-touch-icon.png;." ^
@@ -101,8 +127,10 @@ pyinstaller .\media_tool.py --onefile --name MediaToolGUI --icon .\favicon.ico -
 
 Add `--version-file version_info.txt` if you create one.
 
----
-## Icons
+***
+
+## 🎨 Icons
+
 Place beside `media_tool.py`:
 - `favicon.ico`
 - `apple-touch-icon.png`
@@ -111,12 +139,16 @@ Place beside `media_tool.py`:
 
 Runtime logic prefers `.ico` (Windows) then stacks PNGs with `iconphoto`.
 
----
-## Theming
+***
+
+## 🌙 Theming
+
 Switch between Light / Dark via the Theme menu. Extend palettes in the `THEMES` dictionary.
 
----
-## Troubleshooting
+***
+
+## 🔧 Troubleshooting
+
 | Issue | Fix |
 |-------|-----|
 | Icon missing | Ensure `favicon.ico` present; set `DEBUG_ICONS=1` |
@@ -125,25 +157,31 @@ Switch between Light / Dark via the Theme menu. Extend palettes in the `THEMES` 
 | AV false positive | Rebuild or exclude dist folder |
 | venv creation hangs | Use `--without-pip` + bootstrap, or Python 3.12 |
 
----
-## Roadmap Ideas
-- Drag & drop files
-- Batch queue
-- FFmpeg progress parsing
-- Log font customization
-- Auto-update checker
+***
 
----
-## Contributing
-1. Fork
-2. Branch: `feat/your-feature`
-3. Commit & push
-4. Open PR
+## 🗺️ Roadmap Ideas
+
+- 📁 Drag & drop files
+- 📋 Batch queue
+- 📊 FFmpeg progress parsing
+- 🔤 Log font customization
+- 🔄 Auto-update checker
+
+***
+
+## 🤝 Contributing
+
+1. 🍴 Fork
+2. 🌿 Branch: `feat/your-feature`
+3. 💻 Commit & push
+4. 🔀 Open PR
 
 Maintain minimal UI & consistent theming.
 
----
-## License
+***
+
+## 📄 License
+
 MIT License (recommended). Add `LICENSE` file with full MIT text:
 ```
 MIT License
@@ -151,14 +189,41 @@ Copyright (c) 2025 Bharath K C
 Permission is hereby granted, free of charge, to any person obtaining a copy...
 ```
 
----
-## Attribution
+***
+
+## 🙏 Attribution
+
 All external tools retain their own licenses; this project only orchestrates them.
 
----
-## Quick Start
+***
+
+## ⚡ Quick Start
+
 ```powershell
 python media_tool.py
 ```
 
-Enjoy streamlined media workflows.
+**Enjoy streamlined media workflows.** 🎛️✨
+
+***
+
+<div align="center">
+
+**Made with ❤️ by Bharath K C**
+
+*Streamline your media workflows today!*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
