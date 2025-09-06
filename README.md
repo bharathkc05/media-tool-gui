@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🎬 Media Tool GUI ⚙️
 
 ### *Streamlined Dolby Vision & Video Workflow Orchestrator*
@@ -212,6 +214,8 @@ python media_tool.py
 **Made with ❤️ by Bharath K C**
 
 *Streamline your media workflows today!*
+
+</div>
 
 
 
