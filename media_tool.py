@@ -1414,5 +1414,7 @@ class App(tk.Tk):
         save_presets(data)
         messagebox.showinfo("Presets", f"Saved preset '{name}'.")
 
+venv_path = r'.\.venv\Scripts\Activate.ps1'
+
 if __name__ == "__main__":
     App().mainloop()
