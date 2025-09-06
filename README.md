@@ -24,7 +24,7 @@ It provides a single window with themed tabs, async process logging, and a prese
 ## Files
 | File | Purpose |
 |------|---------|
-| `1.py` | Main Tkinter application |
+| `media_tool.py` | Main Tkinter application |
 | `tool_gui_presets.json` | Created on demand to store presets |
 | `favicon.ico` / PNG icons | Window & executable icons |
 
@@ -50,20 +50,20 @@ No third-party Python deps (pure stdlib + Tk).
 ---
 ## Run From Source
 ```powershell
-python 1.py
+python media_tool.py
 ```
 
 Virtual environment (optional):
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python 1.py
+python media_tool.py
 ```
 
 Enable icon debug:
 ```powershell
 $env:DEBUG_ICONS='1'
-python 1.py
+python media_tool.py
 ```
 
 ---
@@ -79,7 +79,7 @@ pip install pyinstaller
 
 One-folder build:
 ```powershell
-pyinstaller .\1.py --name MediaToolGUI --icon .\favicon.ico --noconsole ^
+pyinstaller .\media_tool.py --name MediaToolGUI --icon .\favicon.ico --noconsole ^
 	--add-data "apple-touch-icon.png;." ^
 	--add-data "favicon-16x16.png;." ^
 	--add-data "favicon-32x32.png;." ^
@@ -90,7 +90,7 @@ pyinstaller .\1.py --name MediaToolGUI --icon .\favicon.ico --noconsole ^
 
 One-file build:
 ```powershell
-pyinstaller .\1.py --onefile --name MediaToolGUI --icon .\favicon.ico --noconsole ^
+pyinstaller .\media_tool.py --onefile --name MediaToolGUI --icon .\favicon.ico --noconsole ^
 	--add-data "apple-touch-icon.png;." ^
 	--add-data "favicon-16x16.png;." ^
 	--add-data "favicon-32x32.png;." ^
@@ -103,7 +103,7 @@ Add `--version-file version_info.txt` if you create one.
 
 ---
 ## Icons
-Place beside `1.py`:
+Place beside `media_tool.py`:
 - `favicon.ico`
 - `apple-touch-icon.png`
 - `favicon-16x16.png`, `favicon-32x32.png`
@@ -147,7 +147,7 @@ Maintain minimal UI & consistent theming.
 MIT License (recommended). Add `LICENSE` file with full MIT text:
 ```
 MIT License
-Copyright (c) 2025 <Your Name>
+Copyright (c) 2025 Bharath K C
 Permission is hereby granted, free of charge, to any person obtaining a copy...
 ```
 
@@ -158,7 +158,7 @@ All external tools retain their own licenses; this project only orchestrates the
 ---
 ## Quick Start
 ```powershell
-python 1.py
+python media_tool.py
 ```
 
 Enjoy streamlined media workflows.
