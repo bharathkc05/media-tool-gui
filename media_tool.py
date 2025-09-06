@@ -10,6 +10,7 @@ from tkinter import ttk, filedialog, messagebox, simpledialog
 import webbrowser
 
 APP_TITLE = "Media Tool GUI"
+APP_VERSION = "1.0.0"
 DEFAULT_PRESET_FILE = "tool_gui_presets.json"
 
 # ---------------------------------------------------------------------------
@@ -1099,7 +1100,7 @@ class App(tk.Tk):
         # (exe_name, friendly, url)
         tools = [
             ("dovi_tool", "dovi_tool (Dolby Vision)", "https://github.com/quietvoid/dovi_tool/releases"),
-            ("mp4muxer", "mp4muxer", "https://github.com/quietvoid/mp4muxer/releases"),
+            ("mp4muxer", "mp4muxer", "https://github.com/DolbyLaboratories/dlb_mp4base/blob/master/bin"),
             ("mkvmerge", "mkvmerge (MKVToolNix)", "https://mkvtoolnix.download/downloads.html"),
             ("mkvextract", "mkvextract (MKVToolNix)", "https://mkvtoolnix.download/downloads.html"),
             ("mkvinfo", "mkvinfo (MKVToolNix)", "https://mkvtoolnix.download/downloads.html"),
