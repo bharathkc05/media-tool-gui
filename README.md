@@ -49,7 +49,7 @@ It provides a single window with themed tabs, async process logging, and a prese
 |------|-----|
 | dovi_tool | [https://github.com/quietvoid/dovi_tool/releases](https://github.com/quietvoid/dovi_tool/releases) |
 | mp4muxer | [https://github.com/DolbyLaboratories/dlb_mp4base/blob/master/bin/mp4muxer.exe](https://github.com/DolbyLaboratories/dlb_mp4base/blob/master/bin/mp4muxer.exe) |
-| MKVToolNix (mkvmerge, etc.) | https://mkvtoolnix.download/downloads.html |
+| MKVToolNix (mkvmerge, etc.) | [https://mkvtoolnix.download/downloads.html](https://mkvtoolnix.download/downloads.html) |
 | FFmpeg | [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html) |
 
 Startup dialog offers download links if missing.
